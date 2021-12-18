@@ -6,6 +6,6 @@ Author: Michael Baumberger
 [TryHackMe link](https://tryhackme.com/room/networkservices)
 ---
 
-- [SMB](./network-service-smb.md)
-- [Telnet](./network-service-telnet.md)
-- [FTP](./network-service-ftp.md)
+- [SMB](./network-services-smb.md)
+- [Telnet](./network-services-telnet.md)
+- [FTP](./network-services-ftp.md)
