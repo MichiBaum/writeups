@@ -2,8 +2,8 @@
 
 This repository contains my writeups from:
 
-- [Try Hack Me](./try_hack_me)
-- [Hack The Box](./hack_the_box)
+- [Try Hack Me](./try_hack_me/README.md)
+- [Hack The Box](./hack_the_box/README.md)
 
 I do not make any guarantees that the writeups are correct. The writeups can also be out of date after a while.
 
