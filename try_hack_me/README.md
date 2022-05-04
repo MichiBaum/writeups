@@ -20,5 +20,5 @@
 | [Network Services](./network-services)                                  | [TryHackMe link](https://tryhackme.com/room/networkservices)      |                             |
 | [Network Services 2](./network-services-2)                              | [TryHackMe link](https://tryhackme.com/room/networkservices2)     |                             |
 | [Pickle Rick](./pickle-rick)                                            | [TryHackMe link](https://tryhackme.com/room/picklerick)           |                             |
-| [Mr Robot CTF](./mr-robot-cft)                                          | [TryHackMe link](https://tryhackme.com/room/mrrobot)              |                             |
+| [Mr Robot CTF](./mr-robot-cft/mr-robot-ctf.md)                          | [TryHackMe link](https://tryhackme.com/room/mrrobot)              |                             |
 
