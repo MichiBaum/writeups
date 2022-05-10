@@ -6,8 +6,8 @@
 
 ## Rooms
 
-| Room Name                                                               | Try Hack Me Room Link                                             | Module                      |
-|-------------------------------------------------------------------------|-------------------------------------------------------------------|-----------------------------|
+| Room Name                                                                                         | Try Hack Me Room Link                                             | Module                      |
+|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|-----------------------------|
 | [Walking An Application](./intro-to-web-hacking/walking-an-application/walking-an-application.md) | [TryHackMe link](https://tryhackme.com/room/walkinganapplication) | Introduction to Web Hacking |
 | [Content Discovery](./intro-to-web-hacking/content-discovery/content-discovery.md)                | [TryHackMe link](https://tryhackme.com/room/contentdiscovery)     | Introduction to Web Hacking |
 | [Authentication Bypass](./intro-to-web-hacking/authentication-bypass/authentication-bypass.md)    | [TryHackMe link](https://tryhackme.com/room/authenticationbypass) | Introduction to Web Hacking |
@@ -21,4 +21,4 @@
 | [Network Services 2](./network-services-2)                                                        | [TryHackMe link](https://tryhackme.com/room/networkservices2)     |                             |
 | [Pickle Rick](./pickle-rick)                                                                      | [TryHackMe link](https://tryhackme.com/room/picklerick)           |                             |
 | [Mr Robot CTF](./mr-robot-cft/mr-robot-ctf.md)                                                    | [TryHackMe link](https://tryhackme.com/room/mrrobot)              |                             |
-
+| [OWASP Top 10](./owasp-top-10)                                                                    | [TryHackMe link](https://tryhackme.com/room/owasptop10)           |                             |

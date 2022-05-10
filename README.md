@@ -1,14 +1,20 @@
-# Writeups
+# All my writeups
 
-This repository contains my writeups from:
+This repo is about my writeups and documentations.  
+Never trust things you haven't done yourself.
 
-- [Try Hack Me](./try_hack_me/README.md)
-- [Hack The Box](./hack_the_box/README.md)
+## Contents
 
-Some tool notes:
+- [java](./java/README.md)
+- [spring](./spring/README.md)
+- [it-sec](./it-sec/README.md)
 
-- [Tools](./tools/README.md)
+## Collaborators
 
-I do not make any guarantees that the writeups are correct. The writeups can also be out of date after a while.
+<!-- readme: collaborators -start --> 
+<!-- readme: collaborators -end -->
 
-If you know good CTFs, feel free to open an issue with suggestions and links.
+## Contributors
+
+<!-- readme: contributors -start --> 
+<!-- readme: contributors -end -->
