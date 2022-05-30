@@ -1,7 +1,5 @@
 # IT Security
 
-This repository contains my writeups about IT security:
-
 - [Try Hack Me](./try_hack_me/README.md)
 - [Hack The Box](./hack_the_box/README.md)
 

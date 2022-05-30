@@ -3,10 +3,12 @@
 This repo is about my writeups and documentations.  
 Never trust things you haven't done yourself.
 
+[Github Pages](https://michibaum.github.io/writeups/)
+
 ## Contents
 
 - [java](./java/README.md)
-- [spring](./spring/README.md)
+- [spring](./java/spring/README.md)
 - [it-sec](./it-sec/README.md)
 
 ## Collaborators

@@ -4,6 +4,7 @@
 Date: 2021-12-21  
 Author: Michael Baumberger  
 [TryHackMe link](https://tryhackme.com/room/mrrobot)
+
 ---
 
 # Task 2 | Hack the machine
