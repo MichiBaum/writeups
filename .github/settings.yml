@@ -1,0 +1,19 @@
+repository:
+  has_issues: true
+  has_wiki: false
+  has_projects: true
+  has_downloads: false
+
+labels:
+  - name: help wanted
+    color: 0e8a16
+  - name: more-information-needed
+    color: d93f0b
+  - name: bug
+    color: f50509
+  - name: feature
+    color: eded09
+  - name: good first issue
+    color: 5319e7
+  - name: needs correction
+    color: f00c5c
