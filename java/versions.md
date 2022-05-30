@@ -4,7 +4,7 @@ Date: 2022-05-30
 Author: Michael Baumberger  
 
 ----
-</br>
+<br />
 
 - [Java Versions](#java-versions)
   - [JDK 1.0](#jdk-10)
@@ -52,7 +52,7 @@ Author: Michael Baumberger
   - [Java SE 21 (LTS)](#java-se-21-lts)
     - [Changes / Features](#changes--features-21)
 
-</br>
+<br />
 
 ## JDK 1.0
 Release: January 1996
