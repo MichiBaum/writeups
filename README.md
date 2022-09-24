@@ -5,9 +5,12 @@ Never trust things you haven't done yourself.
 
 ## Contents
 
-- [java](./java/README.md)
-- [spring](./java/spring/README.md)
-- [it-sec](./it-sec/README.md)
+- IT
+  - [Java](./java/README.md)
+  - [Spring](./java/spring/README.md)
+  - [IT Security](./it-sec/README.md)
+
+
 
 ## Collaborators
 
