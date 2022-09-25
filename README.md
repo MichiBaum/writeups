@@ -1,7 +1,8 @@
 # All my writeups
 
 This repo is about my writeups and documentations.  
-Never trust things you haven't done yourself.
+Never trust things you haven't done yourself.  
+The documentation is not necessarily written by me. Some documentation was taken over 1 to 1. Sources are always included below in the article.
 
 ## Contents
 
@@ -11,6 +12,7 @@ Never trust things you haven't done yourself.
 - [git](./git/README.md)
 - [programming](./programming/README.md)
 - [server](./server/README.md)
+- [software_development](./software_development/README.md)
 
 ## Collaborators
 
