@@ -1,9 +1,7 @@
-# Wsl2 Port Forwarding
-
-Date: 2022-05-30  
-Author: Michael Baumberger  
-Additional file: [port_forwarding.ps1](./port_forwarding.ps1)
 ---
-<br />
+Author: Michael Baumberger
+title: Wsl2 Port Forwarding
+parent: IT Security
+---
 
-## 
+# Wsl2 Port Forwarding

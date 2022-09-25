@@ -1,10 +1,12 @@
-# Network Services
+---
+Author: Michael Baumberger
+title: Network Services
+parent: Try Hack Me Writeups
+ancestor: IT Security
+has_children: true
+---
 
----
-Date: 2021-12-17  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/networkservices)
----
+# Network Services
 
 - [SMB](./network-services-smb.md)
 - [Telnet](./network-services-telnet.md)

@@ -1,10 +1,11 @@
-# Walking An Application
+---
+Author: Michael Baumberger
+title: Walking An Application
+parent: Intro to web hacking
+ancestor: Try Hack Me Writeups
+---
 
----
-Date: 2021-12-19  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/walkinganapplication)
----
+# Walking An Application
 
 ## Task 3 | Viewing The Page Source
 

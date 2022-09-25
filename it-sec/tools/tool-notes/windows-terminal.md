@@ -1,3 +1,10 @@
+---
+Author: Michael Baumberger
+title: Windows Terminal
+parent: Helping Tools and Scripts
+ancestor: IT Security
+---
+
 # Windows Terminal
 
 [Microsoft Documentation](https://docs.microsoft.com/de-de/windows/terminal/)

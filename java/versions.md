@@ -1,10 +1,10 @@
+---
+Author: Michael Baumberger
+title: Java Versions
+parent: Java
+---
+
 # Java Versions
-
-Date: 2022-05-30  
-Author: Michael Baumberger  
-
-----
-<br />
 
 - [Java Versions](#java-versions)
   - [JDK 1.0](#jdk-10)

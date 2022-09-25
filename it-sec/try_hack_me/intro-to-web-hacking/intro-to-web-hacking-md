@@ -1,10 +1,9 @@
 ---
 Author: Michael Baumberger
-title: OWASP Top 10
+title: Intro to web hacking
 parent: Try Hack Me Writeups
 ancestor: IT Security
+has_children: true
 ---
 
-# OWASP Top 10
-
-
+# Intro to web hacking

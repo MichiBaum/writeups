@@ -1,10 +1,11 @@
-# Pickle Rick
+---
+Author: Michael Baumberger
+title: Pickle Rick
+parent: Try Hack Me Writeups
+ancestor: IT Security
+---
 
----
-Date: 2021-12-20  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/picklerick)
----
+# Pickle Rick
 
 # Task 1 | Pickle Rick
 

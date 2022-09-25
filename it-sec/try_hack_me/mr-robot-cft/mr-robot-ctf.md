@@ -1,11 +1,11 @@
+---
+Author: Michael Baumberger
+title: Mr Robot Ctf
+parent: Try Hack Me Writeups
+ancestor: IT Security
+---
+
 # Mr Robot Ctf
-
----
-Date: 2021-12-21  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/mrrobot)
-
----
 
 # Task 2 | Hack the machine
 

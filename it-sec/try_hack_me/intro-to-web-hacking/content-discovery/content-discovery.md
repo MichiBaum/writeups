@@ -1,10 +1,10 @@
-# Content Discovery
+---
+Author: Michael Baumberger
+title: Content Discovery
+parent: Intro to web hacking
+---
 
----
-Date: 2021-12-17  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/contentdiscovery)
----
+# Content Discovery
 
 ## Task 2 | Manual Discovery - Robots.txt
 

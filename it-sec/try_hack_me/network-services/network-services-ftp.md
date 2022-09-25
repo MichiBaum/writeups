@@ -1,10 +1,11 @@
-# Network Services FTP
+---
+Author: Michael Baumberger
+title: Network Services FTP
+parent: Network Services
+ancestor: Try Hack Me Writeups
+---
 
----
-Date: 2021-12-17  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/networkservices)
----
+# Network Services FTP
 
 ## Enumerating FTP
 

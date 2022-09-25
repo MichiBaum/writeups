@@ -1,10 +1,11 @@
-# Network Services
+---
+Author: Michael Baumberger
+title: Network Services 2 Nfs
+parent: Network Services 2
+ancestor: Try Hack Me Writeups
+---
 
----
-Date: 2021-12-19  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/networkservices)
----
+# Network Services 2 Nfs
 
 ## Task 3 | Enumerating NFS
 

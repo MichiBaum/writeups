@@ -1,10 +1,12 @@
-# Network Services
+---
+Author: Michael Baumberger
+title: Network Services 2
+parent: Try Hack Me Writeups
+ancestor: IT Security
+has_children: true
+---
 
----
-Date: 2021-12-19  
-Author: Michael Baumberger  
-[TryHackMe link](https://tryhackme.com/room/networkservices)
----
+# Network Services 2
 
 - [NFS](./network-services-2-nfs.md)
 - [SMTP](./network-services-2-smtp.md)
