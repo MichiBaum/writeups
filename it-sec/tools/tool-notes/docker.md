@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Docker
-parent: Helping Tools and Scripts
-ancestor: IT Security
----
-
 # Docker
 
 ## Installation

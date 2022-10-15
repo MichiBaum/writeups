@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Network Services FTP
-parent: Network Services
-ancestor: Try Hack Me Writeups
----
-
 # Network Services FTP
 
 ## Enumerating FTP

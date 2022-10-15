@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Network Services Telnet
-parent: Network Services
-ancestor: Try Hack Me Writeups
----
-
 # Network Services Telnet
 
 ## Task 6 | Enumerating Telnet

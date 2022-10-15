@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Walking An Application
-parent: Intro to web hacking
-ancestor: Try Hack Me Writeups
----
-
 # Walking An Application
 
 ## Task 3 | Viewing The Page Source

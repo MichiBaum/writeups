@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Network Services 2 Nfs
-parent: Network Services 2
-ancestor: Try Hack Me Writeups
----
-
 # Network Services 2 Nfs
 
 ## Task 3 | Enumerating NFS

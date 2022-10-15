@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Pickle Rick
-parent: Try Hack Me Writeups
-ancestor: IT Security
----
-
 # Pickle Rick
 
 # Task 1 | Pickle Rick

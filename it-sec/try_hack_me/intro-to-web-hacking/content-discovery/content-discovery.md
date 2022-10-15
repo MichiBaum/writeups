@@ -1,9 +1,3 @@
----
-Author: Michael Baumberger
-title: Content Discovery
-parent: Intro to web hacking
----
-
 # Content Discovery
 
 ## Task 2 | Manual Discovery - Robots.txt

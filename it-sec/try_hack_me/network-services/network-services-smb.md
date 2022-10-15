@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Network Services SMB
-parent: Network Services
-ancestor: Try Hack Me Writeups
----
-
 # Network Services SMB
 
 ## Task 3 | Enumerating SMB

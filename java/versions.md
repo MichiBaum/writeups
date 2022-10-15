@@ -1,9 +1,3 @@
----
-Author: Michael Baumberger
-title: Java Versions
-parent: Java
----
-
 # Java Versions
 
 - [Java Versions](#java-versions)

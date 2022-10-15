@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Mr Robot Ctf
-parent: Try Hack Me Writeups
-ancestor: IT Security
----
-
 # Mr Robot Ctf
 
 # Task 2 | Hack the machine

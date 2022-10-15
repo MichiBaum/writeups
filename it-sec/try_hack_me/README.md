@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: Try Hack Me Writeups
-parent: IT Security
-has_children: true
----
-
 # Try Hack Me Writeups
 
 ## Modules

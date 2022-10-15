@@ -1,10 +1,3 @@
----
-Author: Michael Baumberger
-title: OWASP Top 10
-parent: Try Hack Me Writeups
-ancestor: IT Security
----
-
 # OWASP Top 10
 
 

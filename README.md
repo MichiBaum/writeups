@@ -1,15 +1,7 @@
----
-Author: Michael Baumberger
-title: All my writeups
-nav_order: 1
----
-
 # All my writeups
 
 This repo is about my writeups and documentations.  
 Never trust things you haven't done yourself.
-
-[Github Pages](https://michibaum.github.io/writeups/README.html)
 
 ## Contents
 
