@@ -11,6 +11,7 @@
 | docker            | [Notes](./tool-notes/docker.md)            |
 | file              | [Notes](./tool-notes/file.md)              |
 | Windows Terminal  | [Notes](./tool-notes/file.md)              |
+| nmtui             | [Notes](./tool-notes/nmtui.md)             |
 
 
 ## Reverse Shells
