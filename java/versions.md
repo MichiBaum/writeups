@@ -53,6 +53,8 @@ Release: January 1996
 
 ### Changes / Features
 
+#### 
+
 
 ## JDK 1.1
 Release: February 1997
@@ -101,11 +103,33 @@ Release: March 2014
 
 ### Changes / Features
 
+#### JSR 335, JEP 126: Lambdas
+
+#### JSR 335, JEP 126: Collections & Streams
+
+#### JEP 174: Project Nashorn
+
+#### JEP 104: Annotation on Java types
+
+#### JEP 120: Repeating annotations
+
+#### JEP 150: Date and time API
+
 
 ## Java SE 9
 Release: September 2017
 
 ### Changes / Features
+
+#### Collections
+
+#### Streams
+
+#### Optionals
+
+#### Interfaces
+
+#### Jigsaw
 
 
 ## Java SE 10
@@ -113,11 +137,19 @@ Release: March 2018
 
 ### Changes / Features
 
+#### Local-Variable Type Inference: var-keyword
+
 
 ## Java SE 11 (LTS)
 Release: September 2018
 
 ### Changes / Features
+
+#### Strings & Files
+
+#### Run Source Files
+
+#### Local-Variable Type Inference (var) for lambda parameters
 
 
 ## Java SE 12
@@ -131,11 +163,28 @@ Release: September 2019
 
 ### Changes / Features
 
+#### Switch Expression (Preview)
+
+#### Multiline Strings (Preview)
+
 
 ## Java SE 14
 Release: March 2020
 
 ### Changes / Features
+
+#### Switch Expression (Standard)
+
+#### Records (Preview)
+
+#### Helpful NullPointerExceptions
+
+#### Pattern Matching For InstanceOf (Preview)
+
+#### Packaging Tool (Incubator)
+
+#### Garbage Collectors
+The Concurrent Mark Sweep (CMS) Garbage Collector has been removed, and the experimental Z Garbage Collector has been added.
 
 
 ## Java SE 15
@@ -143,11 +192,29 @@ Release: September 2020
 
 ### Changes / Features
 
+#### Text-Blocks / Multiline Strings
+
+#### Sealed Classes - Preview
+
+#### Nashorn JavaScript Engine
+Was marked as deprecated in Java 11 and  now removed.
+
+#### ZGC: Production Ready
+Changed from experimental to production-ready.
+
 
 ## Java SE 16
 Release: March 2021
 
 ### Changes / Features
+
+#### Pattern Matching for instanceof
+
+#### Unix-Domain Socket Channels
+
+#### Foreign Linker API - Preview
+
+#### Records & Pattern Matching
 
 
 ## Java SE 17 (LTS)
@@ -155,18 +222,37 @@ Release: September 2021
 
 ### Changes / Features
 
+#### Pattern Matching for switch (Preview)
+
+#### Sealed Classes (Finalized)
+
+#### Foreign Function & Memory API (Incubator)
+
+#### Deprecating the Security Manager
+
 
 ## Java SE 18
 Release: March 2022
 
 ### Changes / Features
 
+#### UTF-8 by Default
+
+#### Simple Web Server
+
 
 ## Java SE 19
 Release: September 2022
 
-### Changes / Features
+### Changes / Features (Preview)
 
+#### Virtual Threads (Preview)
+
+#### Foreign Function & Memory API (Preview)
+
+#### Structured Concurrency (Preview)
+
+#### Vector API (Preview)
 
 ## Java SE 20
 Release: March 2023
@@ -179,3 +265,8 @@ Release: September 2023
 
 ### Changes / Features
 
+
+## Java SE 22
+Release: March 2024
+
+### Changes / Features
