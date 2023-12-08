@@ -11,7 +11,7 @@ Never trust things you haven't done yourself.
 
 ## Collaborators
 
-<!-- readme: collaborators -start --> 
+<!-- readme: collaborators -start -->
 <table>
 <tr>
     <td align="center">
@@ -26,7 +26,7 @@ Never trust things you haven't done yourself.
 
 ## Contributors
 
-<!-- readme: contributors -start --> 
+<!-- readme: contributors -start -->
 <table>
 <tr>
     <td align="center">
