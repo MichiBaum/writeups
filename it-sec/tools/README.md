@@ -2,16 +2,17 @@
 
 ## Tools
 
-| Name              | My notes                                   |
-|-------------------|--------------------------------------------|
-| nmap              | [Notes](./tool-notes/nmap.md)              |
-| gobuster          | [Notes](./tool-notes/gobuster.md)          |
-| enum4linux        | [Notes](./tool-notes/enum4linux.md)        |
-| pwncat            | [Notes](./tool-notes/pwncat.md)            |
-| docker            | [Notes](./tool-notes/docker.md)            |
-| file              | [Notes](./tool-notes/file.md)              |
-| Windows Terminal  | [Notes](./tool-notes/file.md)              |
-| nmtui             | [Notes](./tool-notes/nmtui.md)             |
+| Name             | My notes                                  |
+| ---------------- | ----------------------------------------- |
+| nmap             | [Notes](./tool-notes/nmap.md)             |
+| gobuster         | [Notes](./tool-notes/gobuster.md)         |
+| enum4linux       | [Notes](./tool-notes/enum4linux.md)       |
+| pwncat           | [Notes](./tool-notes/pwncat.md)           |
+| docker           | [Notes](./tool-notes/docker.md)           |
+| file             | [Notes](./tool-notes/file.md)             |
+| Windows Terminal | [Notes](./tool-notes/windows-terminal.md) |
+| nmtui            | [Notes](./tool-notes/nmtui.md)            |
+| sqlmap           | [Notes](./tool-notes/sqlmap.md)           |
 
 
 ## Reverse Shells
