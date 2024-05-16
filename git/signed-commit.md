@@ -1,4 +1,4 @@
-# Signed Commit
+# Signed Commit (Windows)
 
 How to do signed commits with [GPG](./../it-sec/cryptographics/gpg.md)
 
