@@ -1,0 +1,5 @@
+# AHA
+
+AHA stands for avoid hasty abstractions, described by Kent C. Dodds as optimizing for change first, and avoiding premature optimization. and was influenced by Sandi Metz's "prefer duplication over the wrong abstraction".
+
+AHA is rooted in the understanding that the deeper the investment engineers have made into abstracting a piece of software, the more they perceive that the cost of that investment can never be recovered (sunk cost fallacy). Thus, engineers tend to continue to iterate on the same abstraction each time the requirement changes. AHA programming assumes that both [WET](wet-principle.md) and [DRY](dry-principle.md) solutions inevitably create software that is rigid and difficult to maintain. Instead of starting with an abstraction, or abstracting at a specific number of duplications, software can be more flexible and robust if abstraction is done when it is needed, or, when the duplication itself has become the barrier and it is known how the abstraction needs to function.
