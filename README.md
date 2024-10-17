@@ -8,6 +8,9 @@ Never trust things you haven't done yourself.
 - [java](./java/README.md)
 - [spring](./java/spring/README.md)
 - [it-sec](./it-sec/README.md)
+- [git](./git/README.md)
+- [programming](./programming/README.md)
+- [server](./server/README.md)
 
 ## Collaborators
 
