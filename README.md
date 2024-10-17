@@ -12,6 +12,10 @@ Never trust things you haven't done yourself.
 - [programming](./programming/README.md)
 - [server](./server/README.md)
 
+Non technical
+
+- [Finance](./finances/README.md)
+
 ## Collaborators
 
 <!-- readme: collaborators -start -->
