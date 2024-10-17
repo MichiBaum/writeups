@@ -2,6 +2,12 @@
 
 Git can do so much more things than you know.
 
+## Contents
+- [Log](./log.md)
+- [Rebase](./rebase.md)
+- [Sign commits](./signed-commit.md)
+- [Squash](./squash.md)
+- [Pull](./pull.md)
 
 
 ## Resources
